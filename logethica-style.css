@@ -9,7 +9,6 @@ body {
 
 h1, h2, h3 {
   color: #1b1b1b;
-  line-height: 1.2;
 }
 
 header h1 {
@@ -25,7 +24,7 @@ header {
 header .container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
@@ -33,21 +32,22 @@ header .container {
 }
 
 .logo-container {
-  flex: 0 0 auto;
-  text-align: left;
+  flex: 0 0 250px;
+  text-align: center;
 }
 
 .logo-container img {
-  width: 150px;
+  max-width: 100%;
   height: auto;
+  max-height: 200px;
   display: block;
+  margin: auto;
 }
 
 .intro-text {
-  flex: 1;
+  flex: 1 1 500px;
   text-align: left;
   color: white;
-  min-width: 280px;
 }
 
 .section {
@@ -123,11 +123,6 @@ a:hover {
   }
 
   .logo-container {
-    text-align: center;
     margin-bottom: 1rem;
-  }
-
-  .logo-container img {
-    width: 120px;
   }
 }
